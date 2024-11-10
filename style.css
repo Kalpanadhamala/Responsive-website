@@ -1,0 +1,447 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* color: white; */
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    background-color: black;
+    height: 4.4rem;
+    align-items: center;
+    justify-content: center;
+    
+    top: 0;
+}
+.nav-list {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.nav-list li {
+    list-style: none;
+    padding: 30px 50px;
+   
+}
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+.rightNav {
+    width: 50%;
+    text-align: right;
+    padding: 0 20px;
+}
+#search {
+    padding: 5px;
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+}
+.background{
+   
+    position: relative;
+  
+    height: 100vh;
+    overflow: hidden;
+    background: url('lap.jpg') no-repeat center center/cover; /* Ensure correct path */
+    
+}
+.firstSection {
+    height: 100vh;
+}
+.box-main {
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    flex-direction: column;
+    z-index: 2;
+}
+.small-text1, .big-text, .small-text {
+   
+    position: relative;
+}
+.small-text1 {
+    font-size: 20px;
+    color: white;
+}
+.big-text {
+    font-size: 4rem;
+    padding-top: 25px;
+    color: black;
+}
+.small-text {
+    color: white;
+}
+.hello button{
+    font-size: 1.5rem;
+    margin-top: 35px;
+    border-radius: 1000px;
+    padding: 9px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    margin-top: 4rem;
+}
+.B-text{
+    text-align: center;
+    padding-top: 4rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.B-text span{
+    color: rgb(12, 12, 101);
+}
+.card{
+    padding: 15px 12px;
+    margin: 20px 12px;
+    
+    color: rgb(13, 13, 65);
+    box-shadow: 10px 13px 17px black;
+}
+.third-section {
+    height: 50%;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+}
+.left-box, .right-box {
+    height: 70%;
+    width: 50%;
+}
+.left-box {
+    margin-top: 6rem;
+    /* background-color: lightblue; */
+}
+.right-box {
+    /* background-color: rgb(195, 243, 195); */
+}
+.big{
+    font-size: 3.5rem;
+    padding-top: 12.5rem;
+   text-align: center;
+}
+.big span{
+    color: rgb(149, 8, 8);
+    font-size: 3.9rem;
+}
+.small{
+    text-align: center;
+    padding-top: 1.3rem;
+    color: rgb(9, 9, 54);
+}
+/* .big::before{
+    content: 'ROADMAP OF WEB DEVELOPMENT';
+    position: absolute;
+    color: black;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index: -1;
+
+} */
+.left-box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.services-part{
+    margin-top: 2.4rem;
+    height: 60%;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 600px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.B{
+    font-size: 2.6rem;
+    margin-left: 9rem;
+    height: 100%;
+    width: 150%;
+    /* background-color: rgb(88, 210, 40); */
+}
+.B span1{
+    font-size: 4.9rem;
+    color: rgb(19, 19, 105);
+}
+.B span {
+    font-size: 1.5rem;
+    /* border: 2px solid black; */
+color: rgb(148, 7, 7);
+font-weight: bold;
+font-family: sans-serif;
+}
+.img2 img{
+  padding-top: 40px;
+  border-radius: 200px;
+}
+.contact{
+    margin-top: 25px;
+    background-color: rgb(246, 246, 246);
+    height: 490px;
+}
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 34px;
+}
+.form{
+    max-width: 700px;
+    margin: 42px auto;
+}
+.form input{
+    margin: 15px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+}
+.btn-dark{
+    margin-top: 10px;
+    font-size: 14px;
+    padding: 7px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+/* Add this to your CSS */
+.btn-dark:hover {
+    background-color:blue;
+}
+.text-footer{
+    padding: 10px 0;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: grey
+}
+
+
+/* General reset for small devices */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .nav-list {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list li {
+        padding: 10px 20px;
+    }
+
+    .rightNav {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    .box-main {
+        height: auto;
+        padding: 20px;
+    }
+
+    .big-text {
+        font-size: 2rem;
+        padding-top: 15px;
+    }
+
+    .hello button {
+        font-size: 1rem;
+        margin-top: 20px;
+        padding: 7px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+
+    .left-box, .right-box {
+        width: 100%;
+    }
+
+    .big {
+        font-size: 2rem;
+        padding-top: 2rem;
+    }
+
+    .big span {
+        font-size: 2.5rem;
+    }
+
+    .small {
+        padding-top: 0.5rem;
+    }
+
+    .services-part {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .B {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+
+    .img2 img {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        height: auto;
+        padding: 20px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .btn-dark {
+        width: 100%;
+    }
+
+    .text-footer {
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (tablets, 600px to 1024px) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .nav-list {
+        width: 100%;
+    }
+
+    .nav-list li {
+        padding: 15px 30px;
+    }
+
+    .rightNav {
+        width: 50%;
+    }
+
+    #search {
+        width: 70%;
+    }
+
+    .big-text {
+        font-size: 3rem;
+        padding-top: 20px;
+    }
+
+    .hello button {
+        font-size: 1.2rem;
+        margin-top: 30px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .third-section {
+        flex-direction: column;
+    }
+
+    .left-box, .right-box {
+        width: 100%;
+    }
+
+    .big {
+        font-size: 2.5rem;
+        padding-top: 2.5rem;
+    }
+
+    .big span {
+        font-size: 3rem;
+    }
+
+    .small {
+        padding-top: 1rem;
+    }
+
+    .services-part {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .B {
+        width: 90%;
+        margin: 0 auto;
+        font-size: 2.5rem;
+    }
+
+    .img2 img {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .contact {
+        height: auto;
+        padding: 20px;
+    }
+
+    .form {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .form input {
+        width: 100%;
+    }
+
+    .btn-dark {
+        width: 100%;
+    }
+
+    .text-footer {
+        font-size: 16px;
+    }
+}
+
